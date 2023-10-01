@@ -1,0 +1,174 @@
+---
+import Icon from "astro-icon";
+import Layout from "../layouts/Main.astro";
+---
+
+<Layout>
+    <section class="text-neutral-950 py-8 md:py-12">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold lg:text-5xl">
+                Download RustCON
+            </h1>
+            <p class="text-lg text-gray-500 mt-4">
+                Explore RustCON on various platforms and choose the one that suits you best.
+            </p>
+            <div id="download-os"></div>
+        </div>
+    </section>
+    <section class="bg-zinc-950">
+        <div class="container mx-auto px-6 pt-12">
+            <h1 class="text-3xl font-semibold text-white underline decoration-blue-500 lg:text-4xl">
+                Mobile
+            </h1>
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:gap-12">
+                <div class="p-8 border-2 border-gray-400 rounded-xl">
+                    <span class="inline-block">
+                        <Icon name="android" size={40} /> 
+                    </span>
+                    <h1 class="text-2xl font-semibold text-white mt-2">
+                        Android
+                    </h1>
+                    <div class="text-gray-300 mt-2">
+                        <p>Minimum Android Version: 6</p>
+                        <p>Available via the Google Play Store and the downloadable installer below.</p>
+                    </div>
+                    <div class="w-full mt-4 lg:w-5/6 lg:inline-flex">
+                        <a href="#" class="w-full text-white border-gray-400 border-2 rounded-md font-semibold p-2 mb-4 lg:mr-2 lg:mb-0 inline-flex hover:border-blue-500 hover:cursor-pointer transition-colors duration-300">
+                            <Icon name="google-playstore" size={26} class="mr-2" /> 
+                            <span>Go to Google Play Store</span>
+                        </a>
+                        <button id="android-download-button" class="w-full text-white border-gray-400 border-2 rounded-md font-semibold p-2 inline-flex hover:border-blue-500 transition-colors duration-300">
+                            <Icon pack="mdi" name="tray-arrow-down" size={26} class="mr-2" />
+                            <span>Download</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 border-gray-400 p-8">
+                    <span class="inline-block text-white">
+                        <Icon name="apple" size={40} /> 
+                    </span>
+                    <h1 class="mt-2 text-2xl font-semibold text-white">
+                        iOS <i>(Coming Soon)</i>
+                    </h1>
+                    <div class="mt-2 text-gray-300">
+                        <p>Minimum iOS Version: 13.0</p>
+                        <p>Available via the Apple App Store</p>
+                    </div>
+                    <a href="#" class="mt-4 inline-flex w-full rounded-md border-2 border-gray-400 p-2 font-semibold text-white transition-colors duration-300 hover:cursor-pointer hover:border-blue-500 lg:w-3/4">
+                        <Icon name="apple-app-store" size={26} class="mr-2" /> 
+                        <span>Go to Apple App Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-12 px-6">
+            <h1 class="text-3xl font-semibold text-white underline decoration-blue-500 lg:text-4xl">
+                Desktop <i>(Coming Soon)</i>
+            </h1>
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:gap-12">
+                <div class="rounded-xl border-2 border-gray-400 p-8">
+                    <span class="inline-block">
+                        <Icon name="windows" size={40} /> 
+                    </span>
+                    <h1 class="mt-2 text-2xl font-semibold text-white">
+                        Windows
+                    </h1>
+                    <div class="mt-2 text-gray-300">
+                        <p>Minimum Windows Version: 10</p>
+                        <p>Available via the downloadable installer below.</p>
+                    </div>
+                    <button id="windows-download-button" class="mt-4 inline-flex w-full rounded-md border-2 border-gray-400 p-2 font-semibold text-white transition-colors duration-300 hover:cursor-pointer hover:border-blue-500 lg:w-3/4">
+                        <Icon pack="mdi" name="tray-arrow-down" size={26} class="mr-2" />
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="rounded-xl border-2 border-gray-400 p-8">
+                    <span class="inline-block text-white">
+                        <Icon name="apple" size={40} /> 
+                    </span>
+                    <h1 class="mt-2 text-2xl font-semibold text-white">Mac</h1>
+                    <div class="mt-2 text-gray-300">
+                        <p>Minimum macOS Version: 10.13</p>
+                        <p>Available via the downloadable installer below.</p>
+                    </div>
+                    <button id="macos-download-button" class="mt-4 inline-flex w-full rounded-md border-2 border-gray-400 p-2 font-semibold text-white transition-colors duration-300 hover:cursor-pointer hover:border-blue-500 lg:w-3/4">
+                        <Icon pack="mdi" name="tray-arrow-down" size={26} class="mr-2" />
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="rounded-xl border-2 border-gray-400 p-8">
+                    <span class="inline-block text-white">
+                        <Icon name="linux" size={40} /> 
+                    </span>
+                    <h1 class="mt-2 text-2xl font-semibold text-white">
+                        Linux
+                    </h1>
+                    <div class="mt-2 text-gray-300">
+                        <p>Distributed as a <a href="https://appimage.org/" target="_blank" class="underline underline-offset-2">AppImage</a>.</p>
+                        <p>Available via the downloadable installer below.</p>
+                    </div>
+                    <button id="linux-download-button" class="mt-4 inline-flex w-full rounded-md border-2 border-gray-400 p-2 font-semibold text-white transition-colors duration-300 hover:cursor-pointer hover:border-blue-500 lg:w-3/4">
+                        <Icon pack="mdi" name="tray-arrow-down" size={26} class="mr-2" />
+                        <span>Download</span>
+                    </button>
+                </div>
+                <div class="rounded-xl border-2 border-gray-400 p-8">
+                    <span class="inline-block text-white">
+                        <Icon name="debian" size={40} /> 
+                    </span>
+                    <h1 class="mt-2 text-2xl font-semibold text-white">
+                        Debian
+                    </h1>
+                    <div class="mt-2 text-gray-300">
+                        <p>For Debian based distributions.</p>
+                        <p>Available via the downloadable installer below.</p>
+                    </div>
+                    <button id="debian-download-button" class="mt-4 inline-flex w-full rounded-md border-2 border-gray-400 p-2 font-semibold text-white transition-colors duration-300 hover:cursor-pointer hover:border-blue-500 lg:w-3/4">
+                        <Icon pack="mdi" name="tray-arrow-down" size={26} class="mr-2" />
+                        <span>Download</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8">
+            <h2 class="text-3xl font-bold tracking-tight text-neutral-950 sm:text-4xl">
+                <span class="block">Are you a developer?</span>
+                <span class="block text-blue-500">Create your own RCON connections.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="/developers" class="inline-flex items-center justify-center rounded-md border border-transparent bg-blue-500 px-5 py-3 text-base font-medium text-white hover:bg-blue-600 transition-colors duration-300">
+                        Documentation
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="https://github.rustcon.xyz/" class="inline-flex items-center justify-center rounded-md border border-blue-500 bg-white px-5 py-3 text-base font-medium text-blue-500 hover:bg-blue-50 transition-colors duration-300">
+                        Github & Examples
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+<script>
+
+    import downloadInstaller from "../utils/downloadInstaller";
+
+    const allDownloadButtons = document.querySelectorAll('button[id$="download-button"]');
+
+    allDownloadButtons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const os = button.id.split("-")[0];
+
+            // @ts-expect-error
+            downloadInstaller(os);
+
+        });
+
+    });
+
+</script>

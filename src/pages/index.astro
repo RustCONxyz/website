@@ -1,0 +1,105 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "../layouts/Homepage.astro";
+---
+
+<Layout>
+    <section class="bg-white flex flex-col justify-center items-center">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+            <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-none text-neutral-950 lg:text-6xl">
+                RustCON
+            </h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48">
+                Connect to your Rust servers via RCON
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-12">
+                <a
+                    href="https://web.rustcon.xyz/"
+                    class="flex flex-1 w-full lg:max-w-xs py-4 bg-neutral-950 text-white rounded-md place-content-center place-items-center"
+                >
+                    <span class="mr-2">Connect To A Server</span>
+                    <Icon pack="mdi" name="broadcast" size={25} />
+                </a>
+                <a
+                    href="/download"
+                    class="flex flex-1 w-full lg:max-w-xs mt-4 lg:mt-0 py-4 outline outline-2 outline-neutral-950 text-neutral-950 rounded-md place-content-center"
+                >
+                    <span class="mr-2 font-semibold">Download The APP</span>
+                    <Icon pack="mdi" name="tray-arrow-down" size={25} />
+                </a>
+            </div>
+            <div class="my-8 flex justify-center md:mb-16">
+                <a href="http://github.com/RustCONxyz" class="w-fit p-2 border-2 border-blue-500 rounded-full flex items-center justify-center text-neutral-950">
+                    <Icon pack="mdi" name="github" size={30} />
+                    <span class="ml-4 mr-3 font-semibold">
+                        Check us out on GitHub, we are fully open source!
+                    </span>
+                    <Icon pack="mdi" name="chevron-right" size={30} />
+                </a>
+            </div>
+            <div class="mb-2">
+                <div class="space-y-8 mb-8 md:mb-12 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 text-left">
+                    <div class="rounded-xl border-2 border-neutral-950 p-4">
+                        <Icon pack="mdi" name="currency-usd" size={30} />
+                        <h2 class="my-2 text-xl font-bold">Free</h2>
+                        <p class="text-justify text-gray-500">
+                            RustCON will always be free to use on all platforms.
+                            Support the project by 
+                            <a href="/donate" class="underline decoration-blue-500 underline-offset-2">
+                            donating</a> or checking out our partners below.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border-2 border-neutral-950 p-4">
+                        <Icon name="browser" size={30} />
+                        <h2 class="my-2 text-xl font-bold">From Your Browser</h2>
+                        <p class="text-justify text-gray-500">
+                            Everything is run from your browser, from the connection
+                            to the data handling, making it a simple, fast, and easy
+                            solution to use.
+                        </p>
+                    </div>
+                    <div class="rounded-xl border-2 border-neutral-950 p-4">
+                        <Icon pack="mdi" name="cellphone" size={30} />
+                        <h2 class="my-2 text-xl font-bold">On The Go</h2>
+                        <p class="text-justify text-gray-500">
+                            With our mobile apps, connect directly to your servers
+                            from your phone. For more information, check the
+                            <a href="/download" class="underline underline-offset-2 decoration-blue-500">
+                            download</a> page.
+                        </p>
+                    </div>
+                </div>
+                <div class="border-2 border-neutral-950 rounded-xl p-4 lg:flex lg:items-center lg:justify-between">
+                    <div class="lg:w-1/2">
+                        <Icon pack="mdi" name="handshake" size={30} />
+                        <h2 class="my-2 text-xl font-bold text-left">Partners</h2>
+                        <p class="text-gray-500 text-justify">
+                            RustCON is partnered with Tempest and Rust Tools.
+                        </p>
+                        <p class="text-gray-500 text-justify">
+                            Click on the logos to check them out!
+                        </p>
+                    </div>
+                    <div class="mt-4 flex lg:mt-0 lg:w-1/2 flex-row lg:space-x-16 lg:space-y-0 items-center justify-center">
+                        <a href="https://tempest.net/">
+                            <img
+                                src="/tempest.svg"
+                                alt="Tempest Logo"
+                                width="150"
+                                height="150"
+                            />
+                        </a>
+                        <a href="https://rusttools.xyz/">
+                            <img
+                                src="/rusttools.png"
+                                alt="Rust Tools Logo"
+                                width="150"
+                                height="150"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

@@ -1,0 +1,49 @@
+---
+import Icon from "astro-icon";
+import Layout from "../layouts/Main.astro";
+---
+
+<Layout>
+    <section class="container mx-auto p-6 md:py-12 text-justify">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <div>
+                    <h1 class="text-4xl font-semibold mb-4">Support Us</h1>
+                    <p class="text-gray-600 text-justify mb-2">
+                        We greatly appreciate your support! You can donate through Ko-fi or Patreon. 
+                    </p>
+                    <p class="text-gray-600 text-justify">
+                        Running this project has its costs, like licenses for app stores and other services. 
+                        Your donations help cover these and keep the project going. Thank you!
+                    </p>
+                </div>
+                <hr class="my-8 border-gray-400" />
+                <div class="p-4 bg-[#f96854] text-white rounded-lg">
+                    <Icon pack="mdi" name="patreon" class="mb-2 h-12 w-12" />
+                    <h2 class="text-xl font-semibold mb-2">Support on Patreon</h2>
+                    <p class="mb-4">Become a Patreon supporter to help us continue our work.</p>
+                    <a 
+                        href="https://www.patreon.com/kopter" target="_blank" 
+                        class="block bg-white text-[#f96854] py-2 px-4 rounded-lg text-center font-semibold transition duration-300 ease-in-out"
+                    >
+                        Support on Patreon
+                    </a>
+                </div>
+                <div class="mt-4 p-4 bg-[#ff5f5f] text-white rounded-lg">
+                    <Icon pack="cib" name="ko-fi" class="mb-2 h-12 w-12" />
+                    <h2 class="text-xl font-semibold mb-2">Donate via Ko-fi</h2>
+                    <p class="mb-4">Make one-time/monthly donations through Ko-fi to support us.</p>
+                    <a 
+                        href="https://ko-fi.com/kopter" target="_blank" 
+                        class="block bg-white text-[#ff5f5f] py-2 px-4 rounded-lg text-center font-semibold transition duration-300 ease-in-out"
+                    >
+                        Donate on Ko-fi
+                    </a>
+                </div>
+            </div>
+            <div>
+                <iframe id="kofiframe" src="https://ko-fi.com/kopter/?hidefeed=true&widget=true&embed=true&preview=true" style="border:none;width:100%;" height="712" title="kopter" />
+            </div>
+        </div>
+    </section>
+</Layout>
