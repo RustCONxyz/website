@@ -2,7 +2,7 @@
   "name": "rustcon-website",
   "version": "1.0.0",
   "description": "RustCON - Website",
-  "license": "GNU GPLv3",
+  "license": "MIT",
   "author": "Kopter",
   "type": "module",
   "scripts": {
