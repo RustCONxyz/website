@@ -4,7 +4,23 @@ import Layout from "../layouts/Main.astro";
 
 <Layout>
     <section class="bg-white h-[calc(100vh-15rem)] flex flex-col justify-center items-center">
-        <h1 class="text-4xl font-bold">Coming Soon</h1>
-        <p class="mt-2 text-xl">Join the <a href="https://support.rustcon.xyz/" class="text-blue-500 hover:underline">Discord</a> for updates and news</p>
+        <h1 class="text-4xl font-bold">Now available!</h1>
+        <p class="mt-4 text-xl">
+            The helpers packages are now available for JavaScript/TypeScript and Go.
+        </p>
+        <p class="mt-4 text-xl">
+            Full documentation is will soon be available here, for now you can check the README in the repository of each package.
+        </p>
+        <p class="mt-4 text-xl">
+            Click on the logos to go to the repositories.
+        </p>
+        <div class="flex justify-center items-center mt-8">
+            <a href="https://github.com/RustCONxyz/rustcon-js" class="mr-4" target="_blank" rel="noopener noreferrer">
+                <img src="/logo-javascript.svg" alt="JavaScript logo" class="w-32 h-32" />
+            </a>
+            <a href="https://github.com/RustCONxyz/rustcon-go" target="_blank" rel="noopener noreferrer">
+                <img src="/logo-go.svg" alt="Go logo" class="w-32 h-32" />
+            </a>
+        </div>
     </section>
 </Layout>
