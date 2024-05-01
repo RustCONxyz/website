@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon";
-import Image from "astro/components/Image.astro";
 import Layout from "../layouts/Homepage.astro";
 ---
 
@@ -70,34 +69,26 @@ import Layout from "../layouts/Homepage.astro";
                         </p>
                     </div>
                 </div>
-                <div class="border-2 border-neutral-950 rounded-xl p-4 lg:flex lg:items-center lg:justify-between">
-                    <div class="lg:w-1/2">
+                <div class="space-y-8 mb-8 md:mb-12 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 text-left">
+                    <div class="rounded-xl border-2 border-neutral-950 p-4">
                         <Icon pack="mdi" name="handshake" size={30} />
                         <h2 class="my-2 text-xl font-bold text-left">Partners</h2>
                         <p class="text-gray-500 text-justify">
-                            RustCON is partnered with Tempest and Rust Tools.
-                        </p>
-                        <p class="text-gray-500 text-justify">
-                            Click on the logos to check them out!
+                            RustCON is partnered with
+                            <a href="https://tempest.net/" class="underline underline-offset-2 decoration-blue-500">Tempest</a> 
+                            and 
+                            <a href="https://rusttools.xyz/" class="underline underline-offset-2 decoration-blue-500">Rust Tools</a>. 
+                            Check them out as they allow the project to continue.
                         </p>
                     </div>
-                    <div class="mt-4 flex lg:mt-0 lg:w-1/2 flex-row lg:space-x-16 lg:space-y-0 items-center justify-center">
-                        <a href="https://tempest.net/">
-                            <img
-                                src="/tempest.svg"
-                                alt="Tempest Logo"
-                                width="150"
-                                height="150"
-                            />
-                        </a>
-                        <a href="https://rusttools.xyz/">
-                            <Image
-                                src="/rusttools.png"
-                                alt="Rust Tools Logo"
-                                width="150"
-                                height="150"
-                            />
-                        </a>
+                    <div class="rounded-xl border-2 border-neutral-950 p-4">
+                        <Icon pack="mdi" name="code-braces" size={30} />
+                        <h2 class="my-2 text-xl font-bold">For Developers</h2>
+                        <p class="text-justify text-gray-500">
+                            Want to build your own RCON tools? Check out our
+                            <a href="/developers" class="underline underline-offset-2 decoration-blue-500">
+                            helper libraries</a> for JavaScript/TypeScript and Go to help you get started.
+                        </p>
                     </div>
                 </div>
             </div>
